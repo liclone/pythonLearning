@@ -17,22 +17,11 @@
 - 09_19th_CPC_National_Congress --- 将19大报告做成词云
 - 10_ifeng --- 爬取凤凰网即时新闻
 - 11_proxy_ip --- 获得可用的免费代理IP
-## [12306](https://kyfw.12306.cn/otn/leftTicket/init)  :train:
-- 12306抢票程序
-- [12306](https://github.com/ChenPY95/12306)
-## [mmjpg](http://www.mmjpg.com/) :smirk:
-- [爬取妹子图片](https://github.com/ChenPY95/mmjpg)
-## [itchat](http://itchat.readthedocs.io/zh/latest/)
-- itchat模块的学习
-- python玩个人微信账号
-- [itchat]((https://github.com/ChenPY95/itchat))
-## [雪球网](https://xueqiu.com/)
-- 获取雪球网股票信息
-- [xueqiuSpider](https://github.com/ChenPY95/xueqiuSpider) 
+## [12306抢票](https://github.com/ChenPY95/12306)  :train:
+## [爬取妹子图片](https://github.com/ChenPY95/mmjpg) :smirk:
+## [itchart玩微信](https://github.com/ChenPY95/itchat)
+## [雪球网](https://github.com/ChenPY95/xueqiuSpider) 
 # Scrapy爬虫
-## [百度百科](https://baike.baidu.com/)
-- [baiduBaikeSpider](https://github.com/ChenPY95/baiduBaikeSpider)
-## [bilibili](https://www.bilibili.com/)
-- [bilibiliSpider](https://github.com/ChenPY95/bilibiliSpider)
-## 知乎
-- [zhihuSpider](https://github.com/ChenPY95/zhihuSpider)
+## [百度百科](https://github.com/ChenPY95/baiduBaikeSpider)
+## [bilibili](https://github.com/ChenPY95/bilibiliSpider)
+## [知乎用户](https://github.com/ChenPY95/zhihuSpider)
