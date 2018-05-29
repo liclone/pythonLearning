@@ -1,0 +1,12 @@
+# 爬取[中国天气网](http://www.weather.com.cn/)天气
+## 得到一周内国内一目标城市天气情况
+## get_weather 
+- 最开始用urllib写的
+## get_weather_2
+- 之后学习了requests，BeautifulSoup后重构的
+## CityCode.txt
+- 城市及相应代码编号，程序中需要用到
+## get_weather_api
+- 利用一个天气API获取天气情况
+## sendMail_weather_today
+- 将天气情况发送到对方邮箱
