@@ -25,3 +25,4 @@
 ### [百度百科](https://github.com/ChenPY95/baiduBaikeSpider)
 ### [bilibili](https://github.com/ChenPY95/bilibiliSpider)
 ### [知乎用户](https://github.com/ChenPY95/zhihuSpider)
+### [GithubSpider](https://github.com/ChenPY95/GithubSpider)
