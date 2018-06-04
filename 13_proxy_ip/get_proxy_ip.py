@@ -7,7 +7,7 @@ import queue
 from threading import Thread
 import random
 import os
-# from multiprocessing import Pool
+from multiprocessing import Pool
 
 
 class Verify(Thread):
@@ -46,10 +46,8 @@ def get_ip(func):
         thread = []
         for i in range(VERIFY_THREAD_NUM):
             thread.append(Verify(ipque))
-        for i in range(VERIFY_THREAD_NUM):
-            thread[i].start()
-        for i in range(VERIFY_THREAD_NUM):
-            thread[i].join()
+        for th in thread:
+            th.start()
 
     return wrapper
 
@@ -104,31 +102,36 @@ def ip3366(ipque):
         time.sleep(0.1)
 
 
-if __name__ == '__main__':
+def main():
     if os.path.exists('ip_available.txt'):
         os.remove('ip_available.txt')
     print('Start at ' + time.strftime('%Y-%m-%d %X', time.localtime()))
     time.clock()
 
-    xici()
-    kuaidaili()
-    ip66()
-    ip3366()
+    p = Pool(3)
+    p.apply_async(xici())
+    p.apply_async(ip3366())
+    p.apply_async(ip66())
+    # p.apply_async(kuaidaili())  # 快代理出现了问题，浏览器也无法打开
+    p.close()
+    p.join()
+    '''
+    计划全部线程结束后运行下方注释的程序
+    实际为线程仍在验证IP时，下面的程序也运行了
+    测试当进程中没有开线程时，.join()能阻碍程序进行，直到进程运行完再运行下方的程序
+    
+    '''
+    # print('\nAll Done !!!')
+    # print('End at ' + time.strftime('%Y-%m-%d %X', time.localtime()))
+    # print('Take ' + str(time.clock()) + ' seconds')
+    # if os.path.exists('ip_available.txt'):
+    #     print('Available IP :')
+    #     with open('ip_available.txt', 'r') as f:
+    #         print(f.read())
+    # else:
+    #     print('No Available IP')
 
-    # p = Pool(3)
-    # p.apply_async(xici())
-    # p.apply_async(ip3366())
-    # p.apply_async(kuaidaili())
-    # p.close()
-    # p.join()
 
-    print('\nAll Done !!!')
-    print('End at ' + time.strftime('%Y-%m-%d %X', time.localtime()))
-    print('Take ' + str(time.clock()) + ' seconds')
-    if os.path.exists('ip_available.txt'):
-        print('Available IP :')
-        with open('ip_available.txt', 'r') as f:
-            print(f.read())
-    else:
-        print('No Available IP')
+if __name__ == '__main__':
+    main()
 

@@ -21,7 +21,7 @@ VERIFY_THREAD_NUM = 8
 
 XICI = {
     'url': 'http://www.xicidaili.com/nn/',
-    'page': 1,  # 爬取页数，每页有100个IP
+    'page': 2,  # 爬取页数，每页有100个IP
 
 }
 
