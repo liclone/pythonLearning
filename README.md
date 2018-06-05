@@ -21,5 +21,5 @@
 - 15_ifeng --- 爬取凤凰网即时新闻
 - 16_proxy_ip --- 获得可用的免费代理IP
 - [17_12306](https://github.com/ChenPY95/12306)  --- 12306抢票 :train:
-- [18_itchart](https://github.com/ChenPY95/itchat) --- 玩微信
-- [19_GithubSpider](https://github.com/ChenPY95/GithubSpider) --- Github :star: 
+- [18_itchat](https://github.com/ChenPY95/itchat) --- 玩微信
+- [19_Scrapy_GithubSpider](https://github.com/ChenPY95/GithubSpider) --- Github :star: 
