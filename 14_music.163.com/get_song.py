@@ -32,7 +32,7 @@ def get_one_song():
 
 
 def get_songs():
-    with open(Song_txt, 'r') as f:
+    with open(Song_txt, 'r', encoding='utf-8') as f:
         for song in f:
             info = song.split()
             if info:  # 防止空行
