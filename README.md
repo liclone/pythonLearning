@@ -9,10 +9,10 @@
 - 03_weather --- 获取天气情况 :sunny:
 - 04_image_to_txt --- 将图片转成txt文档
 - 05_biqukan --- 从笔趣看上下载小说
-- 06_liepinSpider --- 爬取猎聘网上招聘信息
+- 06_liepinSpider --- 猎聘网
 - [07_xueqiuSpider](https://github.com/ChenPY95/xueqiuSpider) --- 雪球网股票 
-- 08_Scrapy_zhilianSpider --- 爬取智联网上招聘信息
-- 09_Scrapy_bilibiliSpider --- bilibili
+- 08_Scrapy_zhilianSpider --- 智联网
+- 09_Scrapy_bilibiliSpider
 - [10_Scrapy_baiduBaikeSpider](https://github.com/ChenPY95/baiduBaikeSpider) --- 百度百科词条
 - [11_Scrapy_zhihuSpider](https://github.com/ChenPY95/zhihuSpider) --- 知乎用户
 - 12_19th_CPC_National_Congress --- 将19大报告做成词云
@@ -22,4 +22,5 @@
 - 16_proxy_ip --- 获得可用的免费代理IP
 - [17_12306](https://github.com/ChenPY95/12306)  --- 12306抢票 :train:
 - [18_itchat](https://github.com/ChenPY95/itchat) --- 玩微信
-- [19_Scrapy_GithubSpider](https://github.com/ChenPY95/GithubSpider) --- Github :star: 
+- [19_Scrapy_GithubSpider](https://github.com/ChenPY95/GithubSpider) :star: 
+- [20_LeetCode](https://github.com/ChenPY95/LeetCode) 看能坚持到多久 :confused:
