@@ -12,7 +12,7 @@ import os
 # 歌曲保存路径
 dir = r'D:\Music'
 # Songs.txt 绝对路径
-Song_txt = r'F:\Github\pythonLearning\Songs.txt'
+Song_txt = r'F:\Python\Misc\Songs.txt'
 if not os.path.exists(dir):
     os.mkdir(dir)
 os.chdir(dir)
@@ -36,7 +36,11 @@ def get_songs():
         for song in f:
             info = song.split()
             if info:  # 防止空行
-                download(info[0], ' '.join(info[1:]))
+                id_music = ''
+                for i in info[0]:  # 避免id处出现其他字符，
+                   if i.isdigit():
+                       id_music += i
+                download(id_music, ' '.join(info[1:]))
     print('All Done!!!')
 
 
